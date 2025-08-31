@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App (Demo)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Weather App</h1>
+
+    <form id="form" class="search">
+      <select id="city">
+        <!-- Gujarat cities first -->
+        <optgroup label="Gujarat">
+          <option value="ahmedabad">Ahmedabad</option>
+          <option value="gandhinagar">Gandhinagar</option>
+          <option value="surat">Surat</option>
+          <option value="vadodara">Vadodara</option>
+          <option value="rajkot">Rajkot</option>
+        </optgroup>
+        <!-- Global sample -->
+        <optgroup label="Global">
+          <option value="delhi">Delhi</option>
+          <option value="london">London</option>
+          <option value="tokyo">Tokyo</option>
+        </optgroup>
+      </select>
+      <button>Show</button>
+    </form>
+
+    <!-- Loading -->
+    <section id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Fetching weather…</p>
+    </section>
+
+    <!-- Weather card -->
+    <section id="card" class="card hidden">
+      <h2 id="location"></h2>
+      <p id="date"></p>
+      <img id="icon" alt="Weather icon" />
+      <p id="temp"></p>
+      <p id="desc"></p>
+      <p id="wind"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
