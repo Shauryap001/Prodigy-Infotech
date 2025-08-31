@@ -1,3 +1,6 @@
+<img width="1919" height="1066" alt="Screenshot 2025-08-31 202011" src="https://github.com/user-attachments/assets/2de818be-9feb-477b-984b-9d7b5d0d210e" />
+
+
 # PRODIGY_WD_01 – Responsive Landing Page 🚀
 
 A mobile-first landing page built with **HTML 5, CSS 3 and vanilla JavaScript** for my Prodigy Infotech Web-Dev internship.  
