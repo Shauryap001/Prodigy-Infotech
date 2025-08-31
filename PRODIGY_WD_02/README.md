@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Base reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+body{
+  display:flex;justify-content:center;align-items:center;
+  min-height:100vh;background:#111;color:#f1f1f1
+}
+.container{text-align:center;padding:2rem}
+/* Time display */
+#display{
+  font:600 3rem/1 monospace;
+  letter-spacing:2px;margin:1rem 0
+}
+/* Buttons */
+.btn-group{display:flex;gap:.7rem;justify-content:center;margin-bottom:1.2rem}
+button{
+  padding:.7rem 1.4rem;border:none;border-radius:4px;
+  cursor:pointer;font-size:1rem;color:#fff;transition:opacity .3s
+}
+#startStop{background:#2ecc71} /* green */
+#lap{background:#3498db}       /* blue */
+#reset{background:#e74c3c}     /* red */
+button:disabled{opacity:.4;cursor:not-allowed}
+/* Lap list */
+#laps{list-style:none;max-height:210px;overflow:auto;padding-right:.5rem}
+#laps li{
+  background:#1e1e1e;margin-bottom:.4rem;padding:.4rem .8rem;
+  border-left:4px solid #3498db;font-family:monospace
+}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00.00</div>
+    <div class="btn-group">
+      <button id="startStop">Start</button>
+      <button id="lap" disabled>Lap</button>
+      <button id="reset" disabled>Reset</button>
+    </div>
+    <ul id="laps"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
